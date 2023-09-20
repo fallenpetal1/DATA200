@@ -24,7 +24,12 @@ st.write("Test")
 
 
 
-fig, x = plt.subplots()
+#specifying the figure to plot 
+
+
+x.hist(a, bins=10)
+
+
 
 #plotting the figure
 
