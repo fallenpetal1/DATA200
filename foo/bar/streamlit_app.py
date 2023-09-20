@@ -15,11 +15,9 @@ df = pd.read_csv("https://raw.githubusercontent.com/fallenpetal1/DATA200/main/fo
 rows_with_illness_true = df.loc[df['Illness'] == 'Yes']
 # Plot showing ill people across cities
 fig = rows_with_illness_true.City.value_counts().plot.bar()
-fig.set_xlabel("XX")
-fig.set_ylabel("YY")
 a = np.random.normal(1, 1, size=50)
 fig = plt.subplots()
-#x.hist(a, bins=10)
+fig.hist(a, bins=10)
 st.pyplot(fig, clear_figure=None)
 st.write("Test")
 # fig = px.density_heatmap(
