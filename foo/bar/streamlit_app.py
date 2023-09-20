@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-#import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 import plotly.express as px 
 
 st.write("Here's our first attempt at using data to create a table:")
