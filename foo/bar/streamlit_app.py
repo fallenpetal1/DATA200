@@ -15,4 +15,7 @@ rows_with_illness_true = df.loc[df['Illness'] == 'Yes']
 # Plot showing ill people across cities
 fig = rows_with_illness_true.City.value_counts().plot.bar()
 st.write("Test")
-st.markdown(fig)
+# fig = px.density_heatmap(
+#    data_frame=df, y="age_new", x="marital"
+# )
+st.pyplot(fig)
