@@ -19,7 +19,7 @@ fig.set_xlabel("XX")
 fig.set_ylabel("YY")
 a = np.random.normal(1, 1, size=50)
 fig = plt.subplots()
-x.hist(a, bins=10)
+#x.hist(a, bins=10)
 st.pyplot(fig, clear_figure=None)
 st.write("Test")
 # fig = px.density_heatmap(
