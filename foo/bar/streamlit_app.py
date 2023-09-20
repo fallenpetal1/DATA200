@@ -11,8 +11,10 @@ st.write(pd.DataFrame({
 }))
 
 df = pd.read_csv("https://raw.githubusercontent.com/fallenpetal1/DATA200/main/foo/bar/toy_dataset.csv")
-fig = plt.figure(figsize = (10, 5))
+df.hist(column = 'Income')
 
+gen_med = df.groupby(['City','Gender'])['Income'].mean().reset_index(name='count')
+print(gen_med)
 # creating the bar plot
 plt.bar(gen_med['City'], gen_med['count'])#,width = 0.4)
 
