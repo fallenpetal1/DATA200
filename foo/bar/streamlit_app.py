@@ -11,16 +11,14 @@ st.write(pd.DataFrame({
 }))
 
 df = pd.read_csv("https://raw.githubusercontent.com/fallenpetal1/DATA200/main/foo/bar/toy_dataset.csv")
-# Extract only rows with Illness TRUE
-rows_with_illness_true = df.loc[df['Illness'] == 'Yes']
-# Plot showing ill people across cities
-fig = rows_with_illness_true.City.value_counts().plot.bar()
-a = np.random.normal(1, 1, size=50)
-fig,x = plt.subplots()
-x.hist(a, bins=10)
-st.pyplot(fig, clear_figure=None)
-# fig = px.density_heatmap(
-#    data_frame=df, y="age_new", x="marital"
-# )
+fig = plt.figure(figsize = (10, 5))
 
+# creating the bar plot
+plt.bar(gen_med['City'], gen_med['count'])#,width = 0.4)
 
+plt.xlabel("Average Income Per City")
+plt.ylabel("Average Income")
+plt.title("City")
+plt.xticks(rotation=45,horizontalalignment='right' )
+#plt.xlabel('x_description', , x=1.0)
+plt.show()
