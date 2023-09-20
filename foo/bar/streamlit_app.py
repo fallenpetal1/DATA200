@@ -15,4 +15,4 @@ rows_with_illness_true = df.loc[df['Illness'] == 'Yes']
 # Plot showing ill people across cities
 fig = rows_with_illness_true.City.value_counts().plot.bar()
 st.write("Test")
-st.write(fig)
+st.markdown(fig)
