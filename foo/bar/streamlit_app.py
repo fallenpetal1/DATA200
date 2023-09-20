@@ -10,17 +10,14 @@ st.write(pd.DataFrame({
     'second column': [10, 20, 30, 40]
 }))
 
+
 st.write("Here's another attempt at using toy_dataset to create a graph:")
 df = pd.read_csv("https://raw.githubusercontent.com/fallenpetal1/DATA200/main/foo/bar/toy_dataset.csv")
-# df.hist(column = 'Income')
 fig, x = plt.subplots()
 gen_med = df.groupby(['City','Gender'])['Income'].mean().reset_index(name='count')
-# creating the bar plot
-plt.bar(gen_med['City'], gen_med['count'])#,width = 0.4)
-
+plt.bar(gen_med['City'], gen_med['count'])
 plt.xlabel("Average Income Per City")
 plt.ylabel("Average Income")
 plt.title("City")
 plt.xticks(rotation=45,horizontalalignment='right' )
-#plt.xlabel('x_description', , x=1.0)
 st.pyplot(fig)
