@@ -19,7 +19,13 @@ st.write("Test")
 # fig = px.density_heatmap(
 #    data_frame=df, y="age_new", x="marital"
 # )
+#st.pyplot(fig)
+
+
+
+
+fig, x = plt.subplots()
+
+#plotting the figure
+
 st.pyplot(fig)
-
-
-
