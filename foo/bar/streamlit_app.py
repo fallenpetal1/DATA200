@@ -13,4 +13,6 @@ df = pd.read_csv("https://raw.githubusercontent.com/fallenpetal1/DATA200/main/fo
 # Extract only rows with Illness TRUE
 rows_with_illness_true = df.loc[df['Illness'] == 'Yes']
 # Plot showing ill people across cities
-st.write(rows_with_illness_true.City.value_counts().plot.bar())
+fig = rows_with_illness_true.City.value_counts().plot.bar()
+st.write("Test")
+st.write(fig)
