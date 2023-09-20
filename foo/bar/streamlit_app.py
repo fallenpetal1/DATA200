@@ -10,6 +10,7 @@ st.write(pd.DataFrame({
     'second column': [10, 20, 30, 40]
 }))
 
+st.write("Here's another attempt at using toy_dataset to create a graph:")
 df = pd.read_csv("https://raw.githubusercontent.com/fallenpetal1/DATA200/main/foo/bar/toy_dataset.csv")
 # df.hist(column = 'Income')
 fig, x = plt.subplots()
