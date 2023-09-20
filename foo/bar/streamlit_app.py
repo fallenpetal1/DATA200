@@ -17,10 +17,8 @@ rows_with_illness_true = df.loc[df['Illness'] == 'Yes']
 fig = rows_with_illness_true.City.value_counts().plot.bar()
 a = np.random.normal(1, 1, size=50)
 fig,x = plt.subplots()
-fig.xticks(rotation=45)
 # x.hist(a, bins=10)
 st.pyplot(fig, clear_figure=None)
-st.write("Test")
 # fig = px.density_heatmap(
 #    data_frame=df, y="age_new", x="marital"
 # )
