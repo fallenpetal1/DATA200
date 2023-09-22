@@ -19,7 +19,3 @@ plt.ylabel("Average Income")
 plt.title("City")
 plt.xticks(rotation=45,horizontalalignment='right' )
 st.pyplot(fig)
-<<<<<<< HEAD
-=======
-
->>>>>>> 01cd62d (Commit exclude unused packages)
