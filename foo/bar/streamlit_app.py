@@ -1,8 +1,6 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
-import plotly.express as px 
-import numpy as np
 
 st.write("Here's our first attempt at using data to create a table:")
 st.write(pd.DataFrame({
@@ -21,3 +19,7 @@ plt.ylabel("Average Income")
 plt.title("City")
 plt.xticks(rotation=45,horizontalalignment='right' )
 st.pyplot(fig)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 01cd62d (Commit exclude unused packages)
